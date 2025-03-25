@@ -1,7 +1,7 @@
-Project Management System Development
+Project Management Systems
 
 Overview
-Klick Inc. faces challenges in managing multiple projects simultaneously due to inefficient tracking of tasks, resources, budgets, and communication. This project aims to develop a centralized **Project Management System** using **React (frontend)** and **Laravel (backend)** to help teams **organize work, assign tasks, monitor progress, track budgets, and improve communication** among members and stakeholders.
+Nexus Corp. faces challenges in managing multiple projects simultaneously due to inefficient tracking of tasks, resources, budgets, and communication. This project aims to develop a centralized **Project Management System** using **React (frontend)** and **Laravel (backend)** to help teams **organize work, assign tasks, monitor progress, track budgets, and improve communication** among members and stakeholders.
 
 Features
 - User Authentication: Register, login, and logout functionalities.
@@ -85,8 +85,8 @@ Frontend (React Setup)
    npm start
 
 Contributors
-- Project Manager: [Brosoto, Adiel Mhelo]
-- Frontend Developer: [Cero.John Marvin]
-- Backend Developer: [Bolilan, Joshua]
-- Tester/QA: [Cartagena, Clarisse]
-- Documentation Specialist: [Cabuyao,Donna Mae ]
+- Project Manager: [Martin, Darren]
+- Frontend Developer: [Osias, Shariel]
+- Backend Developer: [Manalo, Abigail]
+- Tester/QA: [Panganiban, Mica]
+- Documentation Specialist: [Matira, Sherinne Anne]
