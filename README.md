@@ -1,6 +1,6 @@
 Project Management Systems
 
-Overview
+Overview:
 Nexus Corp. faces challenges in managing multiple projects simultaneously due to inefficient tracking of tasks, resources, budgets, and communication. This project aims to develop a centralized **Project Management System** using **React (frontend)** and **Laravel (backend)** to help teams **organize work, assign tasks, monitor progress, track budgets, and improve communication** among members and stakeholders.
 
 Features
