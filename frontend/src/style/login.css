@@ -1,79 +1,106 @@
 /* Centering the registration box */
 .auth-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #b3c8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f8c1d3, #f5e1fd);
 }
 
 /* Box styling */
 .auth-box {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(26, 25, 25, 0.1);
-    text-align: center;
-    width: 360px;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 380px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.auth-box:hover {
+  transform: translateY(-5px);
 }
 
 /* Title */
 .auth-title {
-    font-size: 24px;
-    color: #1877f2;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 26px;
+  color: #e44e9e;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Input fields */
 .auth-input {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #f8a8d0;
+  border-radius: 10px;
+  font-size: 16px;
+  background: #ffeef6;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
 }
 
-/* Signup button */
+.auth-input:focus {
+  border-color: #e44e9e;
+}
+
+/* Login button */
 .auth-button {
-    width: 100%;
-    padding: 12px;
-    background: #1e80d0;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  background: #ff5f9e;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(255, 95, 158, 0.3);
+  transition: all 0.3s ease-in-out;
 }
 
 .auth-button:hover {
-    background: #166fe5;
+  background: #e44e9e;
+  transform: scale(1.05);
 }
 
-/* Back to login button */
+/* Create Account button */
 .auth-register {
-    width: 100%;
-    padding: 10px;
-    background: #d783ac;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #f5a8d0;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(245, 168, 208, 0.3);
+  transition: all 0.3s ease-in-out;
 }
 
 .auth-register:hover {
-    background: #f61020;
+  background: #ff75b0;
+  transform: scale(1.05);
 }
 
 /* Error message */
 .auth-error {
-    color: red;
-    font-size: 14px;
-    margin-bottom: 10px;
+  color: #d62852;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .auth-box {
+    width: 90%;
+  }
 }

@@ -1,45 +1,94 @@
+/* Dashboard Container */
 .dashboard {
-    display: flex;
-    height: 100vh;
-    background: #f0f2f5;
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee);
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
+/* Sidebar */
 .sidebar {
-    width: 250px;
-    background: #486181;
-    color: white;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #ff92d6;
+  padding: 20px;
+  width: 250px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sidebar h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
+  margin-top: 0;
+  font-size: 20px;
 }
 
+/* Logout Button */
 .logout-btn {
-    background: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff4da6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .logout-btn:hover {
-    background: #e60000;
+  background-color: #ff1c8c;
 }
 
+/* Main Content */
 .main-content {
-    flex: 1;
-    padding: 30px;
-    background: white;
-    border-radius: 10px;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+/* Dashboard Header */
+.main-content h2 {
+  margin-top: 0;
+  color: #ff4da6;
+}
+
+/* Table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #ff92d6;
+  color: white;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #ffe4f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main-content {
+    margin: 10px;
+  }
 }
